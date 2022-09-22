@@ -11,7 +11,7 @@
   
   <link rel="icon" href="img/icon.png">
 </head>
-<body>
+<body style="background-color: black;">
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="padding-left: 20%; padding-right:20%">
       <div class="container-fluid">
@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse"  id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
@@ -36,12 +36,12 @@
       </div>
     </nav>
   </header>
-  <img src="img/money.png" alt="money" class="money-img">
+  <img src="img/icon.png" alt="money" class="money-img">
   <h1>Exchange Rate Calculator</h1>
-  <p>Choose the currency and the amounts to get the exchange rate</p>
+  <p style="color: white; text-decoration:dotted;">Choose the currency and the amounts to get the exchange rate</p>
   <div class="container">
     <div class="currency">
-      <select id="currency-one">
+      <select style="border-color: aliceblue;left: 500px; border-color: #343A40;border-width:5px; border-radius: 10px;" class="btn-hv btn-dark" id="currency-one">
         <option value="AED">AED</option>
         <option value="ARS">ARS</option>
         <option value="AUD">AUD</option>
@@ -93,14 +93,15 @@
         <option value="VND">VND</option>
         <option value="ZAR">ZAR</option>
       </select>
-      <input type="number" id="amount-one" placeholder="0" value="1">
+      <input style="background-color: #343A40; border-radius: 10px;" type="number" class="btn-dark" id="amount-one" placeholder="0" value="1">
     </div>
     <div class="swap-rate-container">
-      <button class="btn" id="swap">Swap</button>
+      <div class="swap-btn"></div>
+      <button class="btn-grey btn-hv swap" style="border-radius:10px;border-color:#46494d; border-width: 5px;">Swap</button>
       <div class="rate" id="rate"></div>
     </div>
     <div class="currency">
-      <select id="currency-two">
+      <select style="border-radius: 10px;border-color:#343A40;border-width: 5px;" id="currency-two" class="btn-hv btn-dark">
         <option value="AED">AED</option>
         <option value="ARS">ARS</option>
         <option value="AUD">AUD</option>
@@ -115,7 +116,7 @@
         <option value="DKK">DKK</option>
         <option value="DOP">DOP</option>
         <option value="EGP">EGP</option>
-        <option value="EUR" selected>EUR</option>
+        <option value="EUR">EUR</option>
         <option value="FJD">FJD</option>
         <option value="GBP">GBP</option>
         <option value="GTQ">GTQ</option>
@@ -124,7 +125,7 @@
         <option value="HUF">HUF</option>
         <option value="IDR">IDR</option>
         <option value="ILS">ILS</option>
-        <option value="INR">INR</option>
+        <option value="INR" selected>INR</option>
         <option value="ISK">ISK</option>
         <option value="JPY">JPY</option>
         <option value="KRW">KRW</option>
@@ -152,7 +153,7 @@
         <option value="VND">VND</option>
         <option value="ZAR">ZAR</option>
       </select>
-      <input type="number" id="amount-two" placeholder="0">
+      <input style="background-color: #343A40; border-radius: 10px;" type="number" class="btn-dark" id="amount-two" placeholder="0" value="1">
     </div>
   </div>
 <script src="script.js"></script>
