@@ -66,22 +66,23 @@ p {
 }
 
 .swap-rate-container {
-  size: 60px;
+  size: px;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
+  align-content: left;
+  width: 431px;
 }
 .swap{
   padding: 5px 5px 5px 5px;
-  position: absolute;
-  left: 305px;
+  position: relative;
+  left: px;
   font-size: 20px;
-  display: flex;
 }
 
 .rate {
   color: var(--primary-color);
-  font-size: 14px;
+  font-size: 0px;
   padding: 0 10px;
 }
 
